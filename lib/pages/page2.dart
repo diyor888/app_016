@@ -109,9 +109,9 @@ class _HomePageState extends State<HomePage> {
           Page4(
               img1: "assets/images/img_1.png", img2: "assets/images/img_2.png"),
           Page4(
-              img1: "assets/images/img_2.png", img2: "assets/images/img_1.png"),
-          Page4(
               img1: "assets/images/img_3.png", img2: "assets/images/img_4.png"),
+          Page4(
+              img1: "assets/images/img_7.png", img2: "assets/images/img_8.png"),
           Page4(
               img1: "assets/images/img_5.png", img2: "assets/images/img_6.png"),
           Page4(

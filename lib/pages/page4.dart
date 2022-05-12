@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 
 class Page4 extends StatefulWidget {
-  const Page4({required this.img1, required this.img2, Key? key})
-      : super(key: key);
+  const Page4({required this.img1, required this.img2});
   final String img1;
   final String img2;
 
@@ -38,7 +37,6 @@ class _Page4State extends State<Page4> {
                       ),
                     ),
                   ),
-
                   Column(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
