@@ -21,14 +21,12 @@ class _HomePageState extends State<HomePage> {
       body: CustomScrollView(
         slivers: [
           SliverAppBar(
-            floating: false,
+            floating: true,
             pinned: true,
             actions: [
-              Padding(
-                padding:
-                    EdgeInsets.all(MediaQuery.of(context).size.width * 0.025),
-                child: Container(
+               Container(
                   padding: EdgeInsets.only(right: 12, left: 12),
+                  margin: EdgeInsets.only(top: 12,bottom: 12),
                   child: Center(
                     child: Text(
                       '7',
@@ -40,7 +38,7 @@ class _HomePageState extends State<HomePage> {
                     color: Colors.white38,
                   ),
                 ),
-              ),
+
             ],
             expandedHeight: MediaQuery.of(context).size.height * 0.38,
             backgroundColor: Colors.black,
@@ -58,17 +56,15 @@ class _HomePageState extends State<HomePage> {
                   color: Colors.black,
                   child: Stack(
                     children: [
-                      Padding(
-                        padding: EdgeInsets.all(10),
-                        child: Container(
+                       Container(
+                         margin: EdgeInsets.all(10),
                           decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(15),
+                            borderRadius: BorderRadius.circular(25),
                             image: DecorationImage(
                               image: AssetImage('assets/images/img.png'),
                             ),
                           ),
                         ),
-                      ),
                       Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,

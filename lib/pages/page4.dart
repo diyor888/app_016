@@ -18,11 +18,7 @@ class _Page4State extends State<Page4> {
   Widget build(BuildContext context) {
     return SliverToBoxAdapter(
       child: Padding(
-        padding: EdgeInsets.only(
-            left: MediaQuery.of(context).size.width * 0.04,
-            right: MediaQuery.of(context).size.width * 0.04,
-            top: MediaQuery.of(context).size.width * 0.04,
-            bottom: MediaQuery.of(context).size.width * 0.04),
+        padding: EdgeInsets.all(15),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -31,15 +27,18 @@ class _Page4State extends State<Page4> {
               width: MediaQuery.of(context).size.width * 0.45,
               child: Stack(
                 children: [
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(15),
-                    child: Image(
-                      image: AssetImage(widget.img1),
-                      height: MediaQuery.of(context).size.width * 0.45,
-                      width: MediaQuery.of(context).size.width * 0.45,
-                      fit: BoxFit.cover,
+                  Container(
+                    height: MediaQuery.of(context).size.width * 0.45,
+                    width: MediaQuery.of(context).size.width * 0.45,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      image: DecorationImage(
+                        image:  AssetImage(widget.img1),
+                        fit: BoxFit.cover,
+                      ),
                     ),
                   ),
+
                   Column(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
@@ -82,13 +81,15 @@ class _Page4State extends State<Page4> {
               width: MediaQuery.of(context).size.width * 0.45,
               child: Stack(
                 children: [
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(15),
-                    child: Image(
-                      image: AssetImage(widget.img2),
-                      height: MediaQuery.of(context).size.width * 0.45,
-                      width: MediaQuery.of(context).size.width * 0.45,
-                      fit: BoxFit.cover,
+                  Container(
+                    height: MediaQuery.of(context).size.width * 0.45,
+                    width: MediaQuery.of(context).size.width * 0.45,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      image: DecorationImage(
+                        image:  AssetImage(widget.img2),
+                        fit: BoxFit.cover,
+                      ),
                     ),
                   ),
                   Column(
